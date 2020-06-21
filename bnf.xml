@@ -3563,7 +3563,7 @@
       <alternative note="C++0x">
         <terminal>alignas</terminal>
         <terminal>(</terminal>
-        <non-terminal>alignment-expression</non-terminal>
+        <non-terminal>constant-expression</non-terminal>
         <terminal optional="true">...</terminal>
         <terminal>)</terminal>
       </alternative>
