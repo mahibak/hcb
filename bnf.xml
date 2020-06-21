@@ -61,6 +61,9 @@
                 <alternative>
                     <non-terminal>preprocessing-op-or-punc</non-terminal>
                 </alternative>
+                <alternative note="remi.beaupre.1@gmail.com">
+                    <non-terminal>whitespace-sequence</non-terminal>
+                </alternative>
                 <alternative>
                     <terminal sentence="true">each non-white-space character that cannot be one of the above</terminal>
                 </alternative>
@@ -1490,6 +1493,26 @@
                 <alternative note="C++0x">
                     <non-terminal>d-char-sequence</non-terminal>
                     <non-terminal>d-char</non-terminal>
+                </alternative>
+            </sequence>
+        </rule>
+        <rule>
+            <syntax>whitespace</syntax>
+            <sequence>
+                <alternative note="remi.beaupre.1@gmail.com">
+                    <terminal sentence="true">The space or \t character</terminal>
+                </alternative>
+            </sequence>
+        </rule>
+        <rule>
+            <syntax>whitespace-sequence</syntax>
+            <sequence>
+                <alternative note="remi.beaupre.1@gmail.com">
+                    <non-terminal>whitespace</non-terminal>
+                </alternative>
+                <alternative note="remi.beaupre.1@gmail.com">
+                    <non-terminal>whitespace-sequence</non-terminal>
+                    <non-terminal>whitespace</non-terminal>
                 </alternative>
             </sequence>
         </rule>
@@ -5078,7 +5101,9 @@
                 <alternative>
                     <terminal>#</terminal>
                     <terminal>include</terminal>
-                    <non-terminal>pp-tokens</non-terminal>
+                    <non-terminal optional="true">whitespace-sequence</non-terminal>
+                    <non-terminal>header-name</non-terminal>
+                    <non-terminal optional="true">whitespace-sequence</non-terminal>
                     <non-terminal>new-line</non-terminal>
                 </alternative>
                 <alternative>
