@@ -33,6 +33,68 @@
         </rule>
     </section>
 
+    <section id="lex.comment">
+        <rule>
+            <syntax>line-comment</syntax>
+            <sequence>
+                <alternative note="remi.beaupre.1@gmail.com">
+                    <terminal>//</terminal>
+                    <non-terminal>l-char-sequence</non-terminal>
+                </alternative>
+            </sequence>
+        </rule>
+        <rule>
+            <syntax>l-char</syntax>
+            <sequence>
+                <alternative note="remi.beaupre.1@gmail.com">
+                    <terminal sentence="true">any member of the source character set except new-line</terminal>
+                </alternative>
+            </sequence>
+        </rule>
+        <rule>
+            <syntax>l-char-sequence</syntax>
+            <sequence>
+                <alternative note="remi.beaupre.1@gmail.com">
+                    <non-terminal>l-char</non-terminal>
+                </alternative>
+                <alternative note="remi.beaupre.1@gmail.com">
+                    <non-terminal>l-char-sequence</non-terminal>
+                    <non-terminal>l-char</non-terminal>
+                </alternative>
+            </sequence>
+        </rule>
+        <rule>
+            <syntax>block-comment</syntax>
+            <sequence>
+                <alternative note="remi.beaupre.1@gmail.com">
+                    <terminal>/*</terminal>
+                    <non-terminal>b-char-sequence</non-terminal>
+                    <terminal>*/</terminal>
+                </alternative>
+            </sequence>
+        </rule>
+        <rule>
+            <syntax>b-char</syntax>
+            <sequence>
+                <alternative note="remi.beaupre.1@gmail.com">
+                    <terminal sentence="true">any member of the source character set except * followed by /</terminal>
+                </alternative>
+            </sequence>
+        </rule>
+        <rule>
+            <syntax>b-char-sequence</syntax>
+            <sequence>
+                <alternative note="remi.beaupre.1@gmail.com">
+                    <non-terminal>b-char</non-terminal>
+                </alternative>
+                <alternative note="remi.beaupre.1@gmail.com">
+                    <non-terminal>b-char-sequence</non-terminal>
+                    <non-terminal>b-char</non-terminal>
+                </alternative>
+            </sequence>
+        </rule>
+    </section>
+
     <section id="lex.pptoken">
         <rule>
             <syntax>preprocessing-token</syntax>
@@ -57,6 +119,12 @@
                 </alternative>
                 <alternative note="C++0x">
                     <non-terminal>user-defined-string-literal</non-terminal>
+                </alternative>
+                <alternative note="remi.beaupre.1@gmail.com">
+                    <non-terminal>block-comment</non-terminal>
+                </alternative>
+                <alternative note="remi.beaupre.1@gmail.com">
+                    <non-terminal>line-comment</non-terminal>
                 </alternative>
                 <alternative>
                     <non-terminal>preprocessing-op-or-punc</non-terminal>
