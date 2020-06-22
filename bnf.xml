@@ -100,9 +100,6 @@
             <syntax>preprocessing-token</syntax>
             <sequence>
                 <alternative>
-                    <non-terminal>header-name</non-terminal>
-                </alternative>
-                <alternative>
                     <non-terminal>identifier</non-terminal>
                 </alternative>
                 <alternative>
