@@ -39,7 +39,7 @@
             <sequence>
                 <alternative note="remi.beaupre.1@gmail.com">
                     <terminal>//</terminal>
-                    <non-terminal>l-char-sequence</non-terminal>
+                    <non-terminal optional="true">l-char-sequence</non-terminal>
                 </alternative>
             </sequence>
         </rule>
@@ -68,7 +68,7 @@
             <sequence>
                 <alternative note="remi.beaupre.1@gmail.com">
                     <terminal>/*</terminal>
-                    <non-terminal>b-char-sequence</non-terminal>
+                    <non-terminal optional="true">b-char-sequence</non-terminal>
                     <terminal>*/</terminal>
                 </alternative>
             </sequence>
