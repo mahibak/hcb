@@ -1745,7 +1745,9 @@
                 </alternative>
                 <alternative>
                     <terminal>(</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>expression</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>)</terminal>
                 </alternative>
                 <alternative>
@@ -1784,10 +1786,12 @@
                 </alternative>
                 <alternative>
                     <terminal>~</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>class-name</non-terminal>
                 </alternative>
                 <alternative note="C++0x">
                     <terminal>~</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>decltype-specifier</non-terminal>
                 </alternative>
                 <alternative>
@@ -1800,24 +1804,31 @@
             <sequence>
                 <alternative>
                     <terminal optional="true">::</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>nested-name-specifier</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal optional="true">template</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>unqualified-id</non-terminal>
                 </alternative>
                 <alternative>
                     <terminal>::</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>identifier</non-terminal>
                 </alternative>
                 <alternative>
                     <terminal>::</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>operator-function-id</non-terminal>
                 </alternative>
                 <alternative note="C++0x">
                     <terminal>::</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>literal-operator-id</non-terminal>
                 </alternative>
                 <alternative>
                     <terminal>::</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>template-id</non-terminal>
                 </alternative>
             </sequence>
@@ -1827,25 +1838,33 @@
             <sequence>
                 <alternative>
                     <non-terminal>type-name</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>::</terminal>
                 </alternative>
                 <alternative>
                     <non-terminal>namespace-name</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>::</terminal>
                 </alternative>
                 <alternative note="C++0x">
                     <non-terminal>decltype-specifier</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>::</terminal>
                 </alternative>
                 <alternative>
                     <non-terminal>nested-name-specifier</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>identifier</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>::</terminal>
                 </alternative>
                 <alternative>
                     <non-terminal>nested-name-specifier</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal optional="true">template</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>simple-template-id</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>::</terminal>
                 </alternative>
             </sequence>
@@ -1858,7 +1877,9 @@
             <sequence>
                 <alternative note="C++0x">
                     <non-terminal>lambda-introducer</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal optional="true">lambda-declarator</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>compound-statement</non-terminal>
                 </alternative>
             </sequence>
@@ -1868,7 +1889,9 @@
             <sequence>
                 <alternative note="C++0x">
                     <terminal>[</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal optional="true">lambda-capture</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>]</terminal>
                 </alternative>
             </sequence>
@@ -1884,7 +1907,9 @@
                 </alternative>
                 <alternative note="C++0x">
                     <non-terminal>capture-default</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>,</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>capture-list</non-terminal>
                 </alternative>
             </sequence>
@@ -1905,12 +1930,16 @@
             <sequence>
                 <alternative note="C++0x">
                     <non-terminal>capture</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal optional="true">...</terminal>
                 </alternative>
                 <alternative note="C++0x">
                     <non-terminal>capture-list</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>,</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>capture</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal optional="true">...</terminal>
                 </alternative>
             </sequence>
@@ -1923,6 +1952,7 @@
                 </alternative>
                 <alternative note="C++0x">
                     <terminal>&amp;</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>identifier</non-terminal>
                 </alternative>
                 <alternative note="C++0x">
@@ -1935,11 +1965,17 @@
             <sequence>
                 <alternative note="C++0x">
                     <terminal>(</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>parameter-declaration-clause</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>)</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal optional="true">mutable</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal optional="true">exception-specification</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal optional="true">attribute-specifier-seq</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal optional="true">trailing-return-type</non-terminal>
                 </alternative>
             </sequence>
@@ -1955,118 +1991,177 @@
                 </alternative>
                 <alternative>
                     <non-terminal>postfix-expression</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>[</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>expression</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>]</terminal>
                 </alternative>
                 <alternative note="C++0x">
                     <non-terminal>postfix-expression</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>[</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal optional="true">braced-init-list</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>]</terminal>
                 </alternative>
                 <alternative>
                     <non-terminal>postfix-expression</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>(</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal optional="true">expression-list</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>)</terminal>
                 </alternative>
                 <alternative>
                     <non-terminal>simple-type-specifier</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>(</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal optional="true">expression-list</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>)</terminal>
                 </alternative>
                 <alternative>
                     <non-terminal>typename-specifier</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>(</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal optional="true">expression-list</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>)</terminal>
                 </alternative>
                 <alternative note="C++0x">
                     <non-terminal>simple-type-specifier</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>braced-init-list</non-terminal>
                 </alternative>
                 <alternative note="C++0x">
                     <non-terminal>typename-specifier</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>braced-init-list</non-terminal>
                 </alternative>
                 <alternative>
                     <non-terminal>postfix-expression</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>.</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal optional="true">template</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>id-expression</non-terminal>
                 </alternative>
                 <alternative>
                     <non-terminal>postfix-expression</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>-></terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal optional="true">template</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>id-expression</non-terminal>
                 </alternative>
                 <alternative>
                     <non-terminal>postfix-expression</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>.</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>pseudo-destructor-name</non-terminal>
                 </alternative>
                 <alternative>
                     <non-terminal>postfix-expression</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>-></terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>pseudo-destructor-name</non-terminal>
                 </alternative>
                 <alternative>
                     <non-terminal>postfix-expression</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>++</terminal>
                 </alternative>
                 <alternative>
                     <non-terminal>postfix-expression</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>--</terminal>
                 </alternative>
                 <alternative>
                     <terminal>dynamic_cast</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>&lt;</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>type-id</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>></terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>(</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>expression</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>)</terminal>
                 </alternative>
                 <alternative>
                     <terminal>static_cast</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>&lt;</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>type-id</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>></terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>(</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>expression</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>)</terminal>
                 </alternative>
                 <alternative>
                     <terminal>reinterpret_cast</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>&lt;</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>type-id</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>></terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>(</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>expression</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>)</terminal>
                 </alternative>
                 <alternative>
                     <terminal>const_cast</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>&lt;</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>type-id</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>></terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>(</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>expression</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>)</terminal>
                 </alternative>
                 <alternative>
                     <terminal>typeid</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>(</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>expression</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>)</terminal>
                 </alternative>
                 <alternative>
                     <terminal>typeid</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>(</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>type-id</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>)</terminal>
                 </alternative>
             </sequence>
@@ -2084,29 +2179,44 @@
             <sequence>
                 <alternative>
                     <terminal optional="true">::</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal optional="true">nested-name-specifier</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>type-name</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>::</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>~</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>type-name</non-terminal>
                 </alternative>
                 <alternative note="C++0x">
                     <terminal optional="true">::</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>nested-name-specifier</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>template</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>simple-template-id</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>::</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>~</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>type-name</non-terminal>
                 </alternative>
                 <alternative>
                     <terminal optional="true">::</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal optional="true">nested-name-specifier</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>~</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>type-name</non-terminal>
                 </alternative>
                 <alternative note="C++0x">
                     <terminal>~</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>decltype-specifier</non-terminal>
                 </alternative>
             </sequence>
@@ -2122,37 +2232,51 @@
                 </alternative>
                 <alternative>
                     <terminal>++</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>cast-expression</non-terminal>
                 </alternative>
                 <alternative>
                     <terminal>--</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>cast-expression</non-terminal>
                 </alternative>
                 <alternative>
                     <non-terminal>unary-operator</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>cast-expression</non-terminal>
                 </alternative>
                 <alternative>
                     <terminal>sizeof</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>unary-expression</non-terminal>
                 </alternative>
                 <alternative>
                     <terminal>sizeof</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>(</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>type-id</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>)</terminal>
                 </alternative>
                 <alternative note="C++0x">
                     <terminal>sizeof</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>...</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>(</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>identifier</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>)</terminal>
                 </alternative>
                 <alternative note="C++0x">
                     <terminal>alignof</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>(</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>type-id</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>)</terminal>
                 </alternative>
                 <alternative note="C++0x">
@@ -2197,18 +2321,28 @@
             <sequence>
                 <alternative>
                     <terminal optional="true">::</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>new</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal optional="true">new-placement</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>new-type-id</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal optional="true">new-initializer</non-terminal>
                 </alternative>
                 <alternative>
                     <terminal optional="true">::</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>new</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal optional="true">new-placement</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>(</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>type-id</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>)</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal optional="true">new-initializer</non-terminal>
                 </alternative>
             </sequence>
@@ -2218,7 +2352,9 @@
             <sequence>
                 <alternative>
                     <terminal>(</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>expression-list</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>)</terminal>
                 </alternative>
             </sequence>
@@ -2228,6 +2364,7 @@
             <sequence>
                 <alternative>
                     <non-terminal>type-specifier-seq</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal optional="true">new-declarator</non-terminal>
                 </alternative>
             </sequence>
@@ -2237,6 +2374,7 @@
             <sequence>
                 <alternative>
                     <non-terminal>ptr-operator</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal optional="true">new-declarator</non-terminal>
                 </alternative>
                 <alternative note="C++0x">
@@ -2249,15 +2387,22 @@
             <sequence>
                 <alternative note="C++0x">
                     <terminal>[</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>expression</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>]</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal optional="true">attribute-specifier-seq</non-terminal>
                 </alternative>
                 <alternative note="C++0x">
                     <non-terminal>noptr-new-declarator</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>[</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>constant-expression</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>]</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal optional="true">attribute-specifier-seq</non-terminal>
                 </alternative>
             </sequence>
@@ -2267,7 +2412,9 @@
             <sequence>
                 <alternative>
                     <terminal>(</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal optional="true">expression-list</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>)</terminal>
                 </alternative>
                 <alternative note="C++0x">
@@ -2283,14 +2430,20 @@
             <sequence>
                 <alternative>
                     <terminal optional="true">::</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>delete</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>cast-expression</non-terminal>
                 </alternative>
                 <alternative>
                     <terminal optional="true">::</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>delete</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>[</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>]</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>cast-expression</non-terminal>
                 </alternative>
             </sequence>
@@ -2303,8 +2456,11 @@
             <sequence>
                 <alternative note="C++0x">
                     <terminal>noexcept</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>(</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>expression</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>)</terminal>
                 </alternative>
             </sequence>
@@ -2320,8 +2476,11 @@
                 </alternative>
                 <alternative>
                     <terminal>(</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>type-id</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>)</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>cast-expression</non-terminal>
                 </alternative>
             </sequence>
@@ -2337,12 +2496,16 @@
                 </alternative>
                 <alternative>
                     <non-terminal>pm-expression</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>.*</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>cast-expression</non-terminal>
                 </alternative>
                 <alternative>
                     <non-terminal>pm-expression</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>->*</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>cast-expression</non-terminal>
                 </alternative>
             </sequence>
@@ -2358,17 +2521,23 @@
                 </alternative>
                 <alternative>
                     <non-terminal>multiplicative-expression</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>*</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>pm-expression</non-terminal>
                 </alternative>
                 <alternative>
                     <non-terminal>multiplicative-expression</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>/</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>pm-expression</non-terminal>
                 </alternative>
                 <alternative>
                     <non-terminal>multiplicative-expression</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>%</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>pm-expression</non-terminal>
                 </alternative>
             </sequence>
@@ -2384,12 +2553,16 @@
                 </alternative>
                 <alternative>
                     <non-terminal>additive-expression</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>+</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>multiplicative-expression</non-terminal>
                 </alternative>
                 <alternative>
                     <non-terminal>additive-expression</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>-</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>multiplicative-expression</non-terminal>
                 </alternative>
             </sequence>
@@ -2405,12 +2578,16 @@
                 </alternative>
                 <alternative>
                     <non-terminal>shift-expression</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>&lt;&lt;</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>additive-expression</non-terminal>
                 </alternative>
                 <alternative>
                     <non-terminal>shift-expression</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>>></terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>additive-expression</non-terminal>
                 </alternative>
             </sequence>
@@ -2426,22 +2603,30 @@
                 </alternative>
                 <alternative>
                     <non-terminal>relational-expression</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>&lt;</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>shift-expression</non-terminal>
                 </alternative>
                 <alternative>
                     <non-terminal>relational-expression</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>></terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>shift-expression</non-terminal>
                 </alternative>
                 <alternative>
                     <non-terminal>relational-expression</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>&lt;=</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>shift-expression</non-terminal>
                 </alternative>
                 <alternative>
                     <non-terminal>relational-expression</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>>=</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>shift-expression</non-terminal>
                 </alternative>
             </sequence>
@@ -2457,12 +2642,16 @@
                 </alternative>
                 <alternative>
                     <non-terminal>equality-expression</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>==</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>relational-expression</non-terminal>
                 </alternative>
                 <alternative>
                     <non-terminal>equality-expression</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>!=</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>relational-expression</non-terminal>
                 </alternative>
             </sequence>
@@ -2478,7 +2667,9 @@
                 </alternative>
                 <alternative>
                     <non-terminal>and-expression</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>&amp;</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>equality-expression</non-terminal>
                 </alternative>
             </sequence>
@@ -2494,7 +2685,9 @@
                 </alternative>
                 <alternative>
                     <non-terminal>exclusive-or-expression</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>^</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>and-expression</non-terminal>
                 </alternative>
             </sequence>
@@ -2510,7 +2703,9 @@
                 </alternative>
                 <alternative>
                     <non-terminal>inclusive-or-expression</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>|</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>exclusive-or-expression</non-terminal>
                 </alternative>
             </sequence>
@@ -2526,7 +2721,9 @@
                 </alternative>
                 <alternative>
                     <non-terminal>logical-and-expression</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>&amp;&amp;</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>inclusive-or-expression</non-terminal>
                 </alternative>
             </sequence>
@@ -2542,7 +2739,9 @@
                 </alternative>
                 <alternative>
                     <non-terminal>logical-or-expression</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>||</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>logical-and-expression</non-terminal>
                 </alternative>
             </sequence>
@@ -2639,7 +2838,9 @@
                 </alternative>
                 <alternative>
                     <non-terminal>expression</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>,</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>assignment-expression</non-terminal>
                 </alternative>
             </sequence>
@@ -2666,22 +2867,27 @@
                 </alternative>
                 <alternative note="C++0x">
                     <non-terminal optional="true">attribute-specifier-seq</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>expression-statement</non-terminal>
                 </alternative>
                 <alternative note="C++0x">
                     <non-terminal optional="true">attribute-specifier-seq</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>compound-statement</non-terminal>
                 </alternative>
                 <alternative note="C++0x">
                     <non-terminal optional="true">attribute-specifier-seq</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>selection-statement</non-terminal>
                 </alternative>
                 <alternative note="C++0x">
                     <non-terminal optional="true">attribute-specifier-seq</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>iteration-statement</non-terminal>
                 </alternative>
                 <alternative note="C++0x">
                     <non-terminal optional="true">attribute-specifier-seq</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>jump-statement</non-terminal>
                 </alternative>
                 <alternative>
@@ -2689,6 +2895,7 @@
                 </alternative>
                 <alternative>
                     <non-terminal optional="true">attribute-specifier-seq</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>try-block</non-terminal>
                 </alternative>
             </sequence>
@@ -2701,21 +2908,31 @@
             <sequence>
                 <alternative>
                     <non-terminal optional="true">attribute-specifier-seq</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>identifier</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>:</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>statement</non-terminal>
                 </alternative>
                 <alternative>
                     <non-terminal optional="true">attribute-specifier-seq</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>case</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>constant-expression</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>:</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>statement</non-terminal>
                 </alternative>
                 <alternative>
                     <non-terminal optional="true">attribute-specifier-seq</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>default</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>:</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>statement</non-terminal>
                 </alternative>
             </sequence>
@@ -2728,6 +2945,7 @@
             <sequence>
                 <alternative>
                     <non-terminal optional="true">expression</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>;</terminal>
                 </alternative>
             </sequence>
@@ -2740,7 +2958,9 @@
             <sequence>
                 <alternative>
                     <terminal>{</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal optional="true">statement-seq</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>}</terminal>
                 </alternative>
             </sequence>
@@ -2753,6 +2973,7 @@
                 </alternative>
                 <alternative>
                     <non-terminal>statement-seq</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>statement</non-terminal>
                 </alternative>
             </sequence>
@@ -2765,25 +2986,39 @@
             <sequence>
                 <alternative>
                     <terminal>if</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>(</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>condition</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>)</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>statement</non-terminal>
                 </alternative>
                 <alternative>
                     <terminal>if</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>(</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>condition</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>)</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>statement</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>else</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>statement</non-terminal>
                 </alternative>
                 <alternative>
                     <terminal>switch</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>(</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>condition</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>)</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>statement</non-terminal>
                 </alternative>
             </sequence>
@@ -2796,15 +3031,22 @@
                 </alternative>
                 <alternative note="C++0x">
                     <non-terminal optional="true">attribute-specifier-seq</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>decl-specifier-seq</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>declarator</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>=</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>initializer-clause</non-terminal>
                 </alternative>
                 <alternative note="C++0x">
                     <non-terminal optional="true">attribute-specifier-seq</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>decl-specifier-seq</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>declarator</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>braced-init-list</non-terminal>
                 </alternative>
             </sequence>
@@ -2817,37 +3059,60 @@
             <sequence>
                 <alternative>
                     <terminal>while</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>(</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>condition</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>)</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>statement</non-terminal>
                 </alternative>
                 <alternative>
                     <terminal>do</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>statement</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>while</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>(</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>expression</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>)</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>;</terminal>
                 </alternative>
                 <alternative>
                     <terminal>for</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>(</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>for-init-statement</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal optional="true">condition</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>;</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal optional="true">expression</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>)</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>statement</non-terminal>
                 </alternative>
                 <alternative note="C++0x">
                     <terminal>for</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>(</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>for-range-declaration</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>:</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>for-range-initializer</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>)</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>statement</non-terminal>
                 </alternative>
             </sequence>
@@ -2868,7 +3133,9 @@
             <sequence>
                 <alternative note="C++0x">
                     <non-terminal optional="true">attribute-specifier-seq</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>type-specifier-seq</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>declarator</non-terminal>
                 </alternative>
             </sequence>
@@ -2878,6 +3145,7 @@
             <sequence>
                 <alternative note="C++0x">
                     <non-terminal>expression</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>braced-init-list</non-terminal>
                 </alternative>
             </sequence>
@@ -2890,25 +3158,32 @@
             <sequence>
                 <alternative>
                     <terminal>break</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>;</terminal>
                 </alternative>
                 <alternative>
                     <terminal>continue</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>;</terminal>
                 </alternative>
                 <alternative>
                     <terminal>return</terminal>
                     <non-terminal optional="true">expression</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>;</terminal>
                 </alternative>
                 <alternative note="C++0x">
                     <terminal>return</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal optional="true">braced-init-list</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>;</terminal>
                 </alternative>
                 <alternative>
                     <terminal>goto</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>identifier</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>;</terminal>
                 </alternative>
             </sequence>
@@ -2937,6 +3212,7 @@
                 </alternative>
                 <alternative>
                     <non-terminal>declaration-seq</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>declaration</non-terminal>
                 </alternative>
             </sequence>
@@ -3007,9 +3283,13 @@
             <sequence>
                 <alternative note="C++0x">
                     <terminal>using</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>identifier</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>=</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>type-id</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>;</terminal>
                 </alternative>
             </sequence>
@@ -3019,7 +3299,9 @@
             <sequence>
                 <alternative note="C++0x">
                     <non-terminal optional="true">attribute-specifier-seq</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal optional="true">decl-specifier-seq</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal optional="true">init-declarator-list</non-terminal>
                     <terminal>;</terminal>
                 </alternative>
@@ -3030,11 +3312,17 @@
             <sequence>
                 <alternative note="C++0x">
                     <terminal>static_assert</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>(</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>constant-expression</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>,</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>string-literal</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>)</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>;</terminal>
                 </alternative>
             </sequence>
@@ -3052,6 +3340,7 @@
             <sequence>
                 <alternative note="C++0x">
                     <non-terminal>attribute-specifier-seq</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>;</terminal>
                 </alternative>
             </sequence>
@@ -3087,10 +3376,12 @@
             <sequence>
                 <alternative note="C++0x">
                     <non-terminal>decl-specifier</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal optional="true">attribute-specifier-seq</non-terminal>
                 </alternative>
                 <alternative note="C++0x">
                     <non-terminal>decl-specifier</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>decl-specifier-seq</non-terminal>
                 </alternative>
             </sequence>
@@ -3188,10 +3479,12 @@
             <sequence>
                 <alternative note="C++0x">
                     <non-terminal>type-specifier</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal optional="true">attribute-specifier-seq</non-terminal>
                 </alternative>
                 <alternative>
                     <non-terminal>type-specifier</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>type-specifier-seq</non-terminal>
                 </alternative>
             </sequence>
@@ -3201,10 +3494,12 @@
             <sequence>
                 <alternative note="C++0x">
                     <non-terminal>trailing-type-specifier</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal optional="true">attribute-specifier-seq</non-terminal>
                 </alternative>
                 <alternative note="C++0x">
                     <non-terminal>trailing-type-specifier</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>trailing-type-specifier-seq</non-terminal>
                 </alternative>
             </sequence>
@@ -3217,13 +3512,18 @@
             <sequence>
                 <alternative>
                     <terminal optional="true">::</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal optional="true">nested-name-specifier</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>type-name</non-terminal>
                 </alternative>
                 <alternative>
                     <terminal optional="true">::</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>nested-name-specifier</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>template</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>simple-template-id</non-terminal>
                 </alternative>
                 <alternative>
@@ -3295,8 +3595,11 @@
             <sequence>
                 <alternative note="C++0x">
                     <terminal>decltype</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>(</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>expression</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>)</terminal>
                 </alternative>
             </sequence>
@@ -3309,22 +3612,32 @@
             <sequence>
                 <alternative>
                     <non-terminal>class-key</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal optional="true">attribute-specifier-seq</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal optional="true">::</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal optional="true">nested-name-specifier</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>identifier</non-terminal>
                 </alternative>
                 <alternative>
                     <non-terminal>class-key</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal optional="true">::</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal optional="true">nested-name-specifier</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal optional="true">template</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>simple-template-id</non-terminal>
                 </alternative>
                 <alternative>
                     <terminal>enum</terminal>
                     <terminal optional="true">::</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal optional="true">nested-name-specifier</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>identifier</non-terminal>
                 </alternative>
             </sequence>
@@ -3345,15 +3658,22 @@
             <sequence>
                 <alternative note="C++0x">
                     <non-terminal>enum-head</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>{</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal optional="true">enumerator-list</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>}</terminal>
                 </alternative>
                 <alternative note="C++0x">
                     <non-terminal>enum-head</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>{</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>enumerator-list</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>,</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>}</terminal>
                 </alternative>
             </sequence>
@@ -3363,15 +3683,22 @@
             <sequence>
                 <alternative note="C++0x">
                     <non-terminal>enum-key</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal optional="true">attribute-specifier-seq</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal optional="true">identifier</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal optional="true">enum-base</non-terminal>
                 </alternative>
                 <alternative note="C++0x">
                     <non-terminal>enum-key</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal optional="true">attribute-specifier-seq</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>nested-name-specifier</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>identifier</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal optional="true">enum-base</non-terminal>
                 </alternative>
             </sequence>
@@ -3381,9 +3708,13 @@
             <sequence>
                 <alternative note="C++0x">
                     <non-terminal>enum-key</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal optional="true">attribute-specifier-seq</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>identifier</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal optional="true">enum-base</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>;</terminal>
                 </alternative>
             </sequence>
@@ -3396,10 +3727,12 @@
                 </alternative>
                 <alternative note="C++0x">
                     <terminal>enum</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>class</terminal>
                 </alternative>
                 <alternative note="C++0x">
                     <terminal>enum</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>struct</terminal>
                 </alternative>
             </sequence>
@@ -3409,6 +3742,7 @@
             <sequence>
                 <alternative note="C++0x">
                     <terminal>:</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>type-specifier-seq</non-terminal>
                 </alternative>
             </sequence>
@@ -3421,7 +3755,9 @@
                 </alternative>
                 <alternative note="C++0x">
                     <non-terminal>enumerator-list</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>,</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>enumerator-definition</non-terminal>
                 </alternative>
             </sequence>
@@ -3434,7 +3770,9 @@
                 </alternative>
                 <alternative>
                     <non-terminal>enumerator</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>=</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>constant-expression</non-terminal>
                 </alternative>
             </sequence>
@@ -3496,10 +3834,15 @@
             <sequence>
                 <alternative note="C++0x">
                     <terminal optional="true">inline</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>namespace</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>identifier</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>{</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>namespace-body</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>}</terminal>
                 </alternative>
             </sequence>
@@ -3509,10 +3852,15 @@
             <sequence>
                 <alternative note="C++0x">
                     <terminal optional="true">inline</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>namespace</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>original-namespace-name</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>{</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>namespace-body</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>}</terminal>
                 </alternative>
             </sequence>
@@ -3522,9 +3870,13 @@
             <sequence>
                 <alternative>
                     <terminal optional="true">inline</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>namespace</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>{</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>namespace-body</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>}</terminal>
                 </alternative>
             </sequence>
@@ -3553,9 +3905,13 @@
             <sequence>
                 <alternative>
                     <terminal>namespace</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>identifier</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>=</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>qualified-namespace-specifier</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>;</terminal>
                 </alternative>
             </sequence>
@@ -3565,7 +3921,9 @@
             <sequence>
                 <alternative>
                     <terminal optional="true">::</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal optional="true">nested-name-specifier</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>namespace-name</non-terminal>
                 </alternative>
             </sequence>
@@ -3578,16 +3936,24 @@
             <sequence>
                 <alternative>
                     <terminal>using</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal optional="true">typename</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal optional="true">::</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>nested-name-specifier</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>unqualified-id</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>;</terminal>
                 </alternative>
                 <alternative>
                     <terminal>using</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>::</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>unqualified-id</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>;</terminal>
                 </alternative>
             </sequence>
@@ -3600,11 +3966,17 @@
             <sequence>
                 <alternative>
                     <non-terminal optional="true">attribute-specifier-seq</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>using</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>namespace</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal optional="true">::</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal optional="true">nested-name-specifier</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>namespace-name</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>;</terminal>
                 </alternative>
             </sequence>
@@ -3617,9 +3989,13 @@
             <sequence>
                 <alternative>
                     <terminal>asm</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>(</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>string-literal</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>)</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>;</terminal>
                 </alternative>
             </sequence>
@@ -3632,14 +4008,20 @@
             <sequence>
                 <alternative>
                     <terminal>extern</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>string-literal</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>{</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal optional="true">declaration-seq</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>}</terminal>
                 </alternative>
                 <alternative>
                     <terminal>extern</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>string-literal</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>declaration</non-terminal>
                 </alternative>
             </sequence>
@@ -3655,6 +4037,7 @@
                 </alternative>
                 <alternative note="C++0x">
                     <non-terminal>attribute-specifier-seq</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>attribute-specifier</non-terminal>
                 </alternative>
             </sequence>
@@ -3664,9 +4047,13 @@
             <sequence>
                 <alternative note="C++0x">
                     <terminal>[</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>[</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>attribute-list</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>]</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>]</terminal>
                 </alternative>
                 <alternative note="C++0x">
@@ -3679,16 +4066,24 @@
             <sequence>
                 <alternative note="C++0x">
                     <terminal>alignas</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>(</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>type-id</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal optional="true">...</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>)</terminal>
                 </alternative>
                 <alternative note="C++0x">
                     <terminal>alignas</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>(</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>constant-expression</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal optional="true">...</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>)</terminal>
                 </alternative>
             </sequence>
@@ -3701,17 +4096,23 @@
                 </alternative>
                 <alternative note="C++0x">
                     <non-terminal>attribute-list</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>,</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal optional="true">attribute</non-terminal>
                 </alternative>
                 <alternative note="C++0x">
                     <non-terminal>attribute</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>...</terminal>
                 </alternative>
                 <alternative note="C++0x">
                     <non-terminal>attribute-list</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>,</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>attribute</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>...</terminal>
                 </alternative>
             </sequence>
@@ -3721,6 +4122,7 @@
             <sequence>
                 <alternative note="C++0x">
                     <non-terminal>attribute-token</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal optional="true">attribute-argument-clause</non-terminal>
                 </alternative>
             </sequence>
@@ -3741,7 +4143,9 @@
             <sequence>
                 <alternative note="C++0x">
                     <non-terminal>attribute-namespace</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>::</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>identifier</non-terminal>
                 </alternative>
             </sequence>
@@ -3759,7 +4163,9 @@
             <sequence>
                 <alternative note="C++0x">
                     <terminal>(</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>balanced-token-seq</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>)</terminal>
                 </alternative>
             </sequence>
@@ -3772,6 +4178,7 @@
                 </alternative>
                 <alternative note="C++0x">
                     <non-terminal>balanced-token-seq</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>balanced-token</non-terminal>
                 </alternative>
             </sequence>
@@ -3781,17 +4188,23 @@
             <sequence>
                 <alternative note="C++0x">
                     <terminal>(</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>balanced-token-seq</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>)</terminal>
                 </alternative>
                 <alternative note="C++0x">
                     <terminal>[</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>balanced-token-seq</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>]</terminal>
                 </alternative>
                 <alternative note="C++0x">
                     <terminal>{</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>balanced-token-seq</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>}</terminal>
                 </alternative>
                 <alternative note="C++0x - except a parenthesis, a bracket, or a brace">
@@ -3810,7 +4223,9 @@
                 </alternative>
                 <alternative>
                     <non-terminal>init-declarator-list</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>,</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>init-declarator</non-terminal>
                 </alternative>
             </sequence>
@@ -3820,6 +4235,7 @@
             <sequence>
                 <alternative>
                     <non-terminal>declarator</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal optional="true">initializer</non-terminal>
                 </alternative>
             </sequence>
@@ -3832,7 +4248,9 @@
                 </alternative>
                 <alternative note="C++0x">
                     <non-terminal>noptr-declarator</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>parameters-and-qualifiers</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>trailing-return-type</non-terminal>
                 </alternative>
             </sequence>
@@ -3845,6 +4263,7 @@
                 </alternative>
                 <alternative note="C++0x">
                     <non-terminal>ptr-operator</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>ptr-declarator</non-terminal>
                 </alternative>
             </sequence>
@@ -3854,22 +4273,30 @@
             <sequence>
                 <alternative note="C++0x">
                     <non-terminal>declarator-id</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal optional="true">attribute-specifier-seq</non-terminal>
                 </alternative>
                 <alternative note="C++0x">
                     <non-terminal>noptr-declarator</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>parameters-and-qualifiers</non-terminal>
                 </alternative>
                 <alternative note="C++0x">
                     <non-terminal>noptr-declarator</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>[</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal optional="true">constant-expression</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>]</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal optional="true">attribute-specifier-seq</non-terminal>
                 </alternative>
                 <alternative note="C++0x">
                     <terminal>(</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>ptr-declarator</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>)</terminal>
                 </alternative>
             </sequence>
@@ -3879,11 +4306,17 @@
             <sequence>
                 <alternative note="C++0x">
                     <terminal>(</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>parameter-declaration-clause</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>)</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal optional="true">attribute-specifier-seq</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal optional="true">cv-qualifier-seq</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal optional="true">ref-qualifier</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal optional="true">exception-specification</non-terminal>
                 </alternative>
             </sequence>
@@ -3893,7 +4326,9 @@
             <sequence>
                 <alternative note="C++0x">
                     <terminal>-></terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>trailing-type-specifier-seq</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal optional="true">abstract-declarator</non-terminal>
                 </alternative>
             </sequence>
@@ -3903,7 +4338,9 @@
             <sequence>
                 <alternative note="C++0x">
                     <terminal>*</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal optional="true">attribute-specifier-seq</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal optional="true">cv-qualifier-seq</non-terminal>
                 </alternative>
                 <alternative note="C++0x">
@@ -3916,9 +4353,13 @@
                 </alternative>
                 <alternative note="C++0x">
                     <terminal optional="true">::</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>nested-name-specifier</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>*</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal optional="true">attribute-specifier-seq</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal optional="true">cv-qualifier-seq</non-terminal>
                 </alternative>
             </sequence>
@@ -3931,6 +4372,7 @@
                 </alternative>
                 <alternative>
                     <non-terminal>cv-qualifier</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>cv-qualifier-seq</non-terminal>
                 </alternative>
             </sequence>
@@ -3962,11 +4404,14 @@
             <sequence>
                 <alternative note="C++0x">
                     <terminal optional="true">...</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>id-expression</non-terminal>
                 </alternative>
                 <alternative note="C++0x">
                     <terminal optional="true">::</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal optional="true">nested-name-specifier</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>class-name</non-terminal>
                 </alternative>
             </sequence>
@@ -3979,6 +4424,7 @@
             <sequence>
                 <alternative>
                     <non-terminal>type-specifier-seq</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal optional="true">abstract-declarator</non-terminal>
                 </alternative>
             </sequence>
@@ -3991,7 +4437,9 @@
                 </alternative>
                 <alternative note="C++0x">
                     <non-terminal optional="true">noptr-abstract-declarator</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>parameters-and-qualifiers</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>trailing-return-type</non-terminal>
                 </alternative>
                 <alternative note="C++0x">
@@ -4007,6 +4455,7 @@
                 </alternative>
                 <alternative note="C++0x">
                     <non-terminal>ptr-operator</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal optional="true">ptr-abstract-declarator</non-terminal>
                 </alternative>
             </sequence>
@@ -4016,18 +4465,25 @@
             <sequence>
                 <alternative note="C++0x">
                     <non-terminal optional="true">noptr-abstract-declarator</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>parameters-and-qualifiers</non-terminal>
                 </alternative>
                 <alternative note="C++0x">
                     <non-terminal optional="true">noptr-abstract-declarator</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>[</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>constant-expression</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>]</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal optional="true">attribute-specifier-seq</non-terminal>
                 </alternative>
                 <alternative note="C++0x">
                     <terminal>(</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>ptr-abstract-declarator</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>)</terminal>
                 </alternative>
             </sequence>
@@ -4040,11 +4496,14 @@
             <sequence>
                 <alternative>
                     <non-terminal optional="true">parameter-declaration-list</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal optional="true">...</terminal>
                 </alternative>
                 <alternative>
                     <non-terminal>parameter-declaration-list</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>,</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>...</terminal>
                 </alternative>
             </sequence>
@@ -4057,7 +4516,9 @@
                 </alternative>
                 <alternative>
                     <non-terminal>parameter-declaration-list</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>,</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>parameter-declaration</non-terminal>
                 </alternative>
             </sequence>
@@ -4067,26 +4528,38 @@
             <sequence>
                 <alternative note="C++0x">
                     <non-terminal optional="true">attribute-specifier-seq</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>decl-specifier-seq</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>declarator</non-terminal>
                 </alternative>
                 <alternative note="C++0x">
                     <non-terminal optional="true">attribute-specifier-seq</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>decl-specifier-seq</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>declarator</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>=</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>initializer-clause</non-terminal>
                 </alternative>
                 <alternative note="C++0x">
                     <non-terminal optional="true">attribute-specifier-seq</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>decl-specifier-seq</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal optional="true">abstract-declarator</non-terminal>
                 </alternative>
                 <alternative note="C++0x">
                     <non-terminal optional="true">attribute-specifier-seq</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>decl-specifier-seq</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal optional="true">abstract-declarator</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>=</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>initializer-clause</non-terminal>
                 </alternative>
             </sequence>
@@ -4099,24 +4572,37 @@
             <sequence>
                 <alternative note="C++0x">
                     <non-terminal optional="true">attribute-specifier-seq</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal optional="true">decl-specifier-seq</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>declarator</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>function-body</non-terminal>
                 </alternative>
                 <alternative note="C++0x">
                     <non-terminal optional="true">attribute-specifier-seq</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal optional="true">decl-specifier-seq</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>declarator</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>=</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>default</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>;</terminal>
                 </alternative>
                 <alternative note="C++0x">
                     <non-terminal optional="true">attribute-specifier-seq</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal optional="true">decl-specifier-seq</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>declarator</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>=</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>delete</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>;</terminal>
                 </alternative>
             </sequence>
@@ -4126,6 +4612,7 @@
             <sequence>
                 <alternative note="C++0x">
                     <non-terminal optional="true">ctor-initializer</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>compound-statement</non-terminal>
                 </alternative>
                 <alternative note="C++0x">
@@ -4144,7 +4631,9 @@
                 </alternative>
                 <alternative note="C++0x">
                     <terminal>(</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>expression-list</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>)</terminal>
                 </alternative>
             </sequence>
@@ -4206,6 +4695,7 @@
                 </alternative>
                 <alternative note="C++0x">
                     <terminal>{</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>}</terminal>
                 </alternative>
             </sequence>
@@ -4325,7 +4815,9 @@
                 </alternative>
                 <alternative>
                     <non-terminal>access-specifier</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>:</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal optional="true">member-specification</non-terminal>
                 </alternative>
             </sequence>
@@ -4339,6 +4831,7 @@
                     <non-terminal optional="true">decl-specifier-seq</non-terminal>
                     <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal optional="true">member-declarator-list</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>;</terminal>
                 </alternative>
                 <alternative>
@@ -4413,6 +4906,7 @@
                 </alternative>
                 <alternative>
                     <non-terminal>virt-specifier-seq</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>virt-specifier</non-terminal>
                 </alternative>
             </sequence>
@@ -4436,6 +4930,7 @@
             <sequence>
                 <alternative>
                     <terminal>=</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>0</terminal>
                 </alternative>
             </sequence>
@@ -4448,6 +4943,7 @@
             <sequence>
                 <alternative>
                     <terminal>:</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>base-specifier-list</non-terminal>
                 </alternative>
             </sequence>
@@ -4457,12 +4953,16 @@
             <sequence>
                 <alternative note="C++0x">
                     <non-terminal>base-specifier</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal optional="true">...</terminal>
                 </alternative>
                 <alternative note="C++0x">
                     <non-terminal>base-specifier-list</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>,</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>base-specifier</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal optional="true">...</terminal>
                 </alternative>
             </sequence>
@@ -4472,18 +4972,25 @@
             <sequence>
                 <alternative note="C++0x">
                     <non-terminal optional="true">attribute-specifier-seq</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>base-type-specifier</non-terminal>
                 </alternative>
                 <alternative note="C++0x">
                     <non-terminal optional="true">attribute-specifier-seq</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>virtual</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal optional="true">access-specifier</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>base-type-specifier</non-terminal>
                 </alternative>
                 <alternative note="C++0x">
                     <non-terminal optional="true">attribute-specifier-seq</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>access-specifier</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal optional="true">virtual</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>base-type-specifier</non-terminal>
                 </alternative>
             </sequence>
@@ -4493,7 +5000,9 @@
             <sequence>
                 <alternative note="C++0x">
                     <terminal optional="true">::</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal optional="true">nested-name-specifier</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>class-name</non-terminal>
                 </alternative>
                 <alternative note="C++0x">
@@ -4531,6 +5040,7 @@
             <sequence>
                 <alternative>
                     <terminal>operator</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>conversion-type-id</non-terminal>
                 </alternative>
             </sequence>
@@ -4540,6 +5050,7 @@
             <sequence>
                 <alternative>
                     <non-terminal>type-specifier-seq</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal optional="true">conversion-declarator</non-terminal>
                 </alternative>
             </sequence>
@@ -4549,6 +5060,7 @@
             <sequence>
                 <alternative>
                     <non-terminal>ptr-operator</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal optional="true">conversion-declarator</non-terminal>
                 </alternative>
             </sequence>
@@ -4561,6 +5073,7 @@
             <sequence>
                 <alternative>
                     <terminal>:</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>mem-initializer-list</non-terminal>
                 </alternative>
             </sequence>
@@ -4570,12 +5083,16 @@
             <sequence>
                 <alternative note="C++0x">
                     <non-terminal>mem-initializer</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal optional="true">...</terminal>
                 </alternative>
                 <alternative note="C++0x">
                     <non-terminal>mem-initializer</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>,</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>mem-initializer-list</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal optional="true">...</terminal>
                 </alternative>
             </sequence>
@@ -4585,12 +5102,16 @@
             <sequence>
                 <alternative>
                     <non-terminal>mem-initializer-id</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>(</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal optional="true">expression-list</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>)</terminal>
                 </alternative>
                 <alternative note="C++0x">
                     <non-terminal>mem-initializer-id</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>braced-init-list</non-terminal>
                 </alternative>
             </sequence>
@@ -4614,13 +5135,18 @@
             <sequence>
                 <alternative>
                     <terminal>operator</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>overloadable-operator</non-terminal>
                 </alternative>
                 <alternative>
                     <terminal>operator</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>overloadable-operator</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>&lt;</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal optional="true">template-argument-list</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>></terminal>
                 </alternative>
             </sequence>
@@ -4636,12 +5162,16 @@
                 </alternative>
                 <alternative>
                     <terminal>new</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>[</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>]</terminal>
                 </alternative>
                 <alternative>
                     <terminal>delete</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>[</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>]</terminal>
                 </alternative>
                 <alternative>
@@ -4768,7 +5298,9 @@
             <sequence>
                 <alternative note="C++0x">
                     <terminal>operator</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>""</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>identifier</non-terminal>
                 </alternative>
             </sequence>
@@ -4781,9 +5313,13 @@
             <sequence>
                 <alternative note="C++0x - The export keyword is reserved for future use">
                     <terminal>template</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>&lt;</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>template-parameter-list</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>></terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>declaration</non-terminal>
                 </alternative>
             </sequence>
@@ -4796,7 +5332,9 @@
                 </alternative>
                 <alternative>
                     <non-terminal>template-parameter-list</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>,</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>template-parameter</non-terminal>
                 </alternative>
             </sequence>
@@ -4820,43 +5358,66 @@
             <sequence>
                 <alternative note="C++0x">
                     <terminal>class</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal optional="true">...</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal optional="true">identifier</non-terminal>
                 </alternative>
                 <alternative>
                     <terminal>class</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal optional="true">identifier</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>=</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>type-id</non-terminal>
                 </alternative>
                 <alternative note="C++0x">
                     <terminal>typename</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal optional="true">...</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal optional="true">identifier</non-terminal>
                 </alternative>
                 <alternative>
                     <terminal>typename</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal optional="true">identifier</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>=</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>type-id</non-terminal>
                 </alternative>
                 <alternative note="C++0x">
                     <terminal>template</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>&lt;</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>template-parameter-list</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>></terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>class</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal optional="true">...</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal optional="true">identifier</non-terminal>
                 </alternative>
                 <alternative>
                     <terminal>template</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>&lt;</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>template-parameter-list</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>></terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>class</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal optional="true">identifier</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>=</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>id-expression</non-terminal>
                 </alternative>
             </sequence>
@@ -4869,8 +5430,11 @@
             <sequence>
                 <alternative note="C++0x">
                     <non-terminal>template-name</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>&lt;</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal optional="true">template-argument-list</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>></terminal>
                 </alternative>
             </sequence>
@@ -4883,14 +5447,20 @@
                 </alternative>
                 <alternative note="C++0x">
                     <non-terminal>operator-function-id</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>&lt;</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal optional="true">template-argument-list</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>></terminal>
                 </alternative>
                 <alternative note="C++0x">
                     <non-terminal>literal-operator-id</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>&lt;</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal optional="true">template-argument-list</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>></terminal>
                 </alternative>
             </sequence>
@@ -4908,12 +5478,16 @@
             <sequence>
                 <alternative note="C++0x">
                     <non-terminal>template-argument</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal optional="true">...</terminal>
                 </alternative>
                 <alternative note="C++0x">
                     <non-terminal>template-argument-list</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>,</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>template-argument</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal optional="true">...</terminal>
                 </alternative>
             </sequence>
@@ -4941,14 +5515,20 @@
                 <alternative note="C++0x">
                     <terminal>typename</terminal>
                     <terminal optional="true">::</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>nested-name-specifier</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>identifier</non-terminal>
                 </alternative>
                 <alternative note="C++0x">
                     <terminal>typename</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal optional="true">::</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>nested-name-specifier</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal optional="true">template</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>simple-template-id</non-terminal>
                 </alternative>
             </sequence>
@@ -4961,7 +5541,9 @@
             <sequence>
                 <alternative note="C++0x">
                     <terminal optional="true">extern</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>template</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>declaration</non-terminal>
                 </alternative>
             </sequence>
@@ -4974,8 +5556,11 @@
             <sequence>
                 <alternative>
                     <terminal>template</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>&lt;</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>></terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>declaration</non-terminal>
                 </alternative>
             </sequence>
@@ -4988,7 +5573,9 @@
             <sequence>
                 <alternative>
                     <terminal>try</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>compound-statement</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>handler-seq</non-terminal>
                 </alternative>
             </sequence>
@@ -4998,8 +5585,11 @@
             <sequence>
                 <alternative note="C++0x">
                     <terminal>try</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal optional="true">ctor-initializer</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>compound-statement</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>handler-seq</non-terminal>
                 </alternative>
             </sequence>
@@ -5012,6 +5602,7 @@
                 </alternative>
                 <alternative>
                     <non-terminal>handler</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>handler-seq</non-terminal>
                 </alternative>
             </sequence>
@@ -5021,9 +5612,13 @@
             <sequence>
                 <alternative>
                     <terminal>catch</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>(</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>exception-declaration</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>)</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>compound-statement</non-terminal>
                 </alternative>
             </sequence>
@@ -5033,12 +5628,16 @@
             <sequence>
                 <alternative note="C++0x">
                     <non-terminal optional="true">attribute-specifier-seq</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>type-specifier-seq</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>declarator</non-terminal>
                 </alternative>
                 <alternative note="C++0x">
                     <non-terminal optional="true">attribute-specifier-seq</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>type-specifier-seq</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal optional="true">abstract-declarator</non-terminal>
                 </alternative>
                 <alternative note="C++0x">
@@ -5051,6 +5650,7 @@
             <sequence>
                 <alternative>
                     <terminal>throw</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal optional="true">assignment-expression</non-terminal>
                 </alternative>
             </sequence>
@@ -5074,8 +5674,11 @@
             <sequence>
                 <alternative note="C++0x">
                     <terminal>throw</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>(</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal optional="true">type-id-list</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>)</terminal>
                 </alternative>
             </sequence>
@@ -5089,8 +5692,11 @@
                 </alternative>
                 <alternative note="C++0x">
                     <non-terminal>type-id-list</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>,</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>type-id</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal optional="true">...</terminal>
                 </alternative>
             </sequence>
@@ -5100,8 +5706,11 @@
             <sequence>
                 <alternative note="C++0x">
                     <terminal>noexcept</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>(</terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <non-terminal>constant-expression</non-terminal>
+                    <non-terminal optional="true">w-char-sequence</non-terminal>
                     <terminal>)</terminal>
                 </alternative>
                 <alternative note="C++0x">
